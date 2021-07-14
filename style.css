@@ -30,7 +30,7 @@ nav {
 nav a {
   text-decoration: none;
   color: whitesmoke;
-  margin-right: 15px;
+  margin-right: 0;
 }
 .log-in-button {
   padding: 8px 20px;
@@ -227,3 +227,87 @@ footer img {
 }
 
 /* Footer Ends */
+
+/* Media Query */
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 688px) {
+  body {
+    width: 100%;
+  }
+  .log-in-button {
+    padding: 0;
+    margin-right: 0;
+    border-radius: 1.5px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+  }
+  .highest-scorer-players {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 80px;
+    row-gap: 20px;
+    padding: 3% 12%;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+    column-gap: 2%;
+  }
+  .highest-scorer-player {
+    width: 250px;
+  }
+  .highest-awards-player {
+    width: 93%;
+    padding: 10px;
+    margin: 70px 0;
+  }
+  .top-part-content img {
+    height: 100px;
+    margin-bottom: 10.3%;
+    transition: transform 1.3s linear;
+    position: relative;
+    left: 1%;
+  }
+  .top-part-content img:hover {
+    transform: translateX(-10%) translateY(3.5%);
+  }
+  .awards-winner-header img {
+    margin-left: 10px;
+    width: 90px;
+  }
+  .watch-live-button {
+    background-image: linear-gradient(rgb(243, 146, 206), rgb(224, 15, 112));
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: rgb(202, 202, 202);
+    font-size: 20px;
+  }
+  .watch-now-button {
+    color: rgb(41, 41, 41);
+    background-color: rgb(199, 164, 243);
+    padding: 5px;
+    border-radius: 1.5px;
+    margin-right: 5px;
+  }
+  .highlights img {
+    margin-left: 2%;
+    width: 70%;
+    height: 90%;
+    border-radius: 50px;
+  }
+  .highlights {
+    display: flex;
+  }
+  .main-topics-heading {
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: large;
+  }
+  .website-top-part {
+    padding-top: 10px;
+    padding-left: 1%;
+    background-color: rgb(66, 66, 247);
+  }
+}
